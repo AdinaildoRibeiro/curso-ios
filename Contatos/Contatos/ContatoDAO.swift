@@ -42,4 +42,14 @@ class ContatoDAO: NSObject {
         return contatos[posicao]
     }
     
+    func remove(byId:Int){
+        contatos.remove(at: byId)
+    }
+    
+    func getPosicao(by contato: Contato) -> Int? {
+        //return contatos.index(where: { other in return other.nome == contato.nome })
+        return contatos.index(where: { other in
+            other.nome == contato.nome
+        })
+    }
 }

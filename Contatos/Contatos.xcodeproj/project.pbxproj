@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		850EE4EC20EBF1D500C23F60 /* ManipulaContatoDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850EE4EB20EBF1D500C23F60 /* ManipulaContatoDelegate.swift */; };
+		850EE4F120EC0C8300C23F60 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 850EE4F320EC0C8300C23F60 /* Localizable.strings */; };
+		850EE4F620EC127200C23F60 /* Strings+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850EE4F520EC127200C23F60 /* Strings+Localized.swift */; };
 		85161F4A20EAA00700377108 /* ContatoDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85161F4920EAA00700377108 /* ContatoDAO.swift */; };
 		85161F4C20EAA78E00377108 /* ListaContatosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85161F4B20EAA78E00377108 /* ListaContatosTableViewController.swift */; };
 		854671C420EA5ECE003125F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854671C320EA5ECE003125F9 /* AppDelegate.swift */; };
@@ -38,6 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		850EE4EB20EBF1D500C23F60 /* ManipulaContatoDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManipulaContatoDelegate.swift; sourceTree = "<group>"; };
+		850EE4ED20EC0C1800C23F60 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main.strings"; sourceTree = "<group>"; };
+		850EE4EE20EC0C1800C23F60 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		850EE4F220EC0C8300C23F60 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		850EE4F420EC0C8700C23F60 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		850EE4F520EC127200C23F60 /* Strings+Localized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Localized.swift"; sourceTree = "<group>"; };
 		85161F4920EAA00700377108 /* ContatoDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContatoDAO.swift; sourceTree = "<group>"; };
 		85161F4B20EAA78E00377108 /* ListaContatosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListaContatosTableViewController.swift; sourceTree = "<group>"; };
 		854671C020EA5ECD003125F9 /* Contatos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Contatos.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,6 +124,9 @@
 				854671CA20EA5ECE003125F9 /* Contatos.xcdatamodeld */,
 				854671F420EA9802003125F9 /* Contato.swift */,
 				85161F4920EAA00700377108 /* ContatoDAO.swift */,
+				850EE4EB20EBF1D500C23F60 /* ManipulaContatoDelegate.swift */,
+				850EE4F320EC0C8300C23F60 /* Localizable.strings */,
+				850EE4F520EC127200C23F60 /* Strings+Localized.swift */,
 			);
 			path = Contatos;
 			sourceTree = "<group>";
@@ -226,6 +238,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
 			);
 			mainGroup = 854671B720EA5ECC003125F9;
 			productRefGroup = 854671C120EA5ECD003125F9 /* Products */;
@@ -245,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				854671D120EA5ECE003125F9 /* LaunchScreen.storyboard in Resources */,
+				850EE4F120EC0C8300C23F60 /* Localizable.strings in Resources */,
 				854671CE20EA5ECE003125F9 /* Assets.xcassets in Resources */,
 				854671C920EA5ECE003125F9 /* Main.storyboard in Resources */,
 			);
@@ -275,7 +289,9 @@
 				854671C620EA5ECE003125F9 /* ViewController.swift in Sources */,
 				85161F4C20EAA78E00377108 /* ListaContatosTableViewController.swift in Sources */,
 				85161F4A20EAA00700377108 /* ContatoDAO.swift in Sources */,
+				850EE4EC20EBF1D500C23F60 /* ManipulaContatoDelegate.swift in Sources */,
 				854671C420EA5ECE003125F9 /* AppDelegate.swift in Sources */,
+				850EE4F620EC127200C23F60 /* Strings+Localized.swift in Sources */,
 				854671CC20EA5ECE003125F9 /* Contatos.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,10 +328,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		850EE4F320EC0C8300C23F60 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				850EE4F220EC0C8300C23F60 /* en */,
+				850EE4F420EC0C8700C23F60 /* pt-BR */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		854671C720EA5ECE003125F9 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				854671C820EA5ECE003125F9 /* Base */,
+				850EE4ED20EC0C1800C23F60 /* pt-BR */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -324,6 +350,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				854671D020EA5ECE003125F9 /* Base */,
+				850EE4EE20EC0C1800C23F60 /* pt-BR */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -335,6 +362,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -385,6 +413,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";

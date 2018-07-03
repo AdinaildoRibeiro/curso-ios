@@ -1,0 +1,18 @@
+
+/* Class = "UITextField"; placeholder = "(99) 9999-9999"; ObjectID = "5Rz-M6-ZFk"; */
+"5Rz-M6-ZFk.placeholder" = "(99) 9999-9999";
+
+/* Class = "UINavigationItem"; title = "Contatos"; ObjectID = "Dil-uL-dNf"; */
+"Dil-uL-dNf.title" = "Contatos";
+
+/* Class = "UITextField"; placeholder = "Site"; ObjectID = "WjT-pG-xNt"; */
+"WjT-pG-xNt.placeholder" = "Site";
+
+/* Class = "UINavigationItem"; title = "Contato"; ObjectID = "ar8-8u-330"; */
+"ar8-8u-330.title" = "Contato";
+
+/* Class = "UITextField"; placeholder = "Endereco"; ObjectID = "bQf-hM-kjH"; */
+"bQf-hM-kjH.placeholder" = "Endereco";
+
+/* Class = "UITextField"; placeholder = "Nome"; ObjectID = "zK4-y5-btX"; */
+"zK4-y5-btX.placeholder" = "Nome";

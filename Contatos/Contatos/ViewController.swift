@@ -16,13 +16,21 @@ class ViewController: UIViewController {
     @IBOutlet weak var txtSite: UITextField!
     
     let dao = ContatoDAO.shared
+    var contato : Contato?
+    var isNew = true
+    var delegate : ManipulaContatoDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        if let contato = self.contato {
+            preencheForm(with: contato)
+            isNew = false
+        }else{
+            contato = Contato()
+        }
     }
-
-    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -31,19 +39,32 @@ class ViewController: UIViewController {
 
     @IBAction func salvar(_ sender: AnyObject) {
         
-        let contato = Contato()
+        preencheContato()
         
-        contato.nome = txtNome.text!
-        contato.telefone = txtTelefone.text!
-        contato.endereco = txtEndereco.text!
-        contato.site = txtSite.text!
-        
-        print(contato)
-        
-        dao.add(novoContato: contato)
+        if isNew {
+            dao.add(novoContato: contato!)
+            delegate?.criado(contato: contato!)
+        }else{
+            delegate?.atualizado(contato: contato!)
+        }
         
         _ = navigationController?.popViewController(animated: true)
     }
 
+    private func preencheForm(with contato: Contato){
+        txtNome.text = contato.nome
+        txtTelefone.text = contato.telefone
+        txtEndereco.text = contato.endereco
+        txtSite.text = contato.site
+    }
+    
+    private func preencheContato(){
+        contato?.nome = txtNome.text!
+        contato?.telefone = txtTelefone.text!
+        contato?.endereco = txtEndereco.text!
+        contato?.site = txtSite.text!
+    }
+    
+    
 }
 
