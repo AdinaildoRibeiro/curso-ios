@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "CelulaCustomizada.awakeFromNib() -&gt; ():CelulaCustomizada.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "imgFotoPerfil.layer.cornerRadius">
+            </PersistentString>
+            <PersistentString
+               value = "imgFotoPerfil.layer.cornerRadius / 2">
+            </PersistentString>
+            <PersistentString
+               value = "imgFotoPerfil.layer">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

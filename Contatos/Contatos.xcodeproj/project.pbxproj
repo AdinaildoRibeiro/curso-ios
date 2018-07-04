@@ -12,6 +12,9 @@
 		850EE4F620EC127200C23F60 /* Strings+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850EE4F520EC127200C23F60 /* Strings+Localized.swift */; };
 		85161F4A20EAA00700377108 /* ContatoDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85161F4920EAA00700377108 /* ContatoDAO.swift */; };
 		85161F4C20EAA78E00377108 /* ListaContatosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85161F4B20EAA78E00377108 /* ListaContatosTableViewController.swift */; };
+		8518CEC720ECF06900F4141E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8518CEC920ECF06900F4141E /* InfoPlist.strings */; };
+		8518CECC20ECFB5A00F4141E /* ActionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8518CECB20ECFB5A00F4141E /* ActionManager.swift */; };
+		8518CECE20ED49EB00F4141E /* CelulaCustomizada.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8518CECD20ED49EB00F4141E /* CelulaCustomizada.swift */; };
 		854671C420EA5ECE003125F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854671C320EA5ECE003125F9 /* AppDelegate.swift */; };
 		854671C620EA5ECE003125F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854671C520EA5ECE003125F9 /* ViewController.swift */; };
 		854671C920EA5ECE003125F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 854671C720EA5ECE003125F9 /* Main.storyboard */; };
@@ -21,6 +24,7 @@
 		854671DC20EA5ECE003125F9 /* ContatosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854671DB20EA5ECE003125F9 /* ContatosTests.swift */; };
 		854671E720EA5ECE003125F9 /* ContatosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854671E620EA5ECE003125F9 /* ContatosUITests.swift */; };
 		854671F520EA9802003125F9 /* Contato.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854671F420EA9802003125F9 /* Contato.swift */; };
+		85D17B6020ED6158002DDDDF /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D17B5F20ED6158002DDDDF /* MapsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		850EE4F520EC127200C23F60 /* Strings+Localized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Localized.swift"; sourceTree = "<group>"; };
 		85161F4920EAA00700377108 /* ContatoDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContatoDAO.swift; sourceTree = "<group>"; };
 		85161F4B20EAA78E00377108 /* ListaContatosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListaContatosTableViewController.swift; sourceTree = "<group>"; };
+		8518CEC820ECF06900F4141E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8518CECA20ECF06A00F4141E /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		8518CECB20ECFB5A00F4141E /* ActionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionManager.swift; sourceTree = "<group>"; };
+		8518CECD20ED49EB00F4141E /* CelulaCustomizada.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CelulaCustomizada.swift; sourceTree = "<group>"; };
 		854671C020EA5ECD003125F9 /* Contatos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Contatos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		854671C320EA5ECE003125F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		854671C520EA5ECE003125F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +72,7 @@
 		854671E620EA5ECE003125F9 /* ContatosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContatosUITests.swift; sourceTree = "<group>"; };
 		854671E820EA5ECE003125F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		854671F420EA9802003125F9 /* Contato.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contato.swift; sourceTree = "<group>"; };
+		85D17B5F20ED6158002DDDDF /* MapsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +136,10 @@
 				850EE4EB20EBF1D500C23F60 /* ManipulaContatoDelegate.swift */,
 				850EE4F320EC0C8300C23F60 /* Localizable.strings */,
 				850EE4F520EC127200C23F60 /* Strings+Localized.swift */,
+				8518CEC920ECF06900F4141E /* InfoPlist.strings */,
+				8518CECB20ECFB5A00F4141E /* ActionManager.swift */,
+				8518CECD20ED49EB00F4141E /* CelulaCustomizada.swift */,
+				85D17B5F20ED6158002DDDDF /* MapsViewController.swift */,
 			);
 			path = Contatos;
 			sourceTree = "<group>";
@@ -261,6 +274,7 @@
 				850EE4F120EC0C8300C23F60 /* Localizable.strings in Resources */,
 				854671CE20EA5ECE003125F9 /* Assets.xcassets in Resources */,
 				854671C920EA5ECE003125F9 /* Main.storyboard in Resources */,
+				8518CEC720ECF06900F4141E /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +307,9 @@
 				854671C420EA5ECE003125F9 /* AppDelegate.swift in Sources */,
 				850EE4F620EC127200C23F60 /* Strings+Localized.swift in Sources */,
 				854671CC20EA5ECE003125F9 /* Contatos.xcdatamodeld in Sources */,
+				8518CECE20ED49EB00F4141E /* CelulaCustomizada.swift in Sources */,
+				8518CECC20ECFB5A00F4141E /* ActionManager.swift in Sources */,
+				85D17B6020ED6158002DDDDF /* MapsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,6 +352,15 @@
 				850EE4F420EC0C8700C23F60 /* pt-BR */,
 			);
 			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		8518CEC920ECF06900F4141E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8518CEC820ECF06900F4141E /* en */,
+				8518CECA20ECF06A00F4141E /* pt-BR */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 		854671C720EA5ECE003125F9 /* Main.storyboard */ = {

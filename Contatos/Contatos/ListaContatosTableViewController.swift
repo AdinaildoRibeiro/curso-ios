@@ -22,12 +22,14 @@ class ListaContatosTableViewController: UIViewController {
         tableview.dataSource = self
         tableview.delegate = self
         
+        let longPress = UILongPressGestureRecognizer(target: self, action: #selector(acoes(gesto:)))
+        
+        tableview.addGestureRecognizer(longPress)
+        // tableview.gestureRecognizers = [longPress] // substitui todos os gestos ja adicionados pelo passado no array
     }
     
     override func viewWillAppear(_ animated: Bool) {
         tableview.reloadData()
-        
-
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -49,8 +51,23 @@ class ListaContatosTableViewController: UIViewController {
         }
     }
     
-    @IBAction func editar(_ sender: AnyObject) {
-        tableview.isEditing = !tableview.isEditing
+    @objc func acoes(gesto: UIGestureRecognizer){
+                
+        guard gesto.state == UIGestureRecognizerState.began else {
+            return
+        }
+        
+        let ponto = gesto.location(in: tableview)
+        
+        guard let indexPath = tableview.indexPathForRow(at: ponto) else{
+            return
+        }
+        
+        let contato = dao.findBy(posicao: indexPath.row)
+        
+        ActionManager(presentIn: self).apresentaAcoes(of: contato)
+        
+        
     }
 }
 
@@ -62,11 +79,15 @@ extension ListaContatosTableViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableview.dequeueReusableCell(withIdentifier: "cell_ID", for: indexPath)
+        guard let cell = tableview.dequeueReusableCell(withIdentifier: "cell_ID", for: indexPath) as? CelulaCustomizada
+            else {
+                fatalError("error.custom.cell".localized)
+            }
         
         let contato = dao.findBy(posicao: indexPath.row)
         // Configure the cell...
-        cell.textLabel?.text = contato.nome
+        cell.txtNomePerfil?.text = contato.nome
+        cell.imgFotoPerfil?.image = contato.foto
         return cell
     }
     

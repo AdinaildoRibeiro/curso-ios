@@ -9,7 +9,17 @@ save="Save";
 edit="Edit";
 delete="Delete";
 
-confirm.delete.header="Cuidado";
-confirm.delete.body="Deseja excluir o contato %@";
+confirm.delete.header="Warning";
+confirm.delete.body="Deseja excluir o contato %@ ?";
 
 name="Name";
+
+error.custom.cell="Can't cast to CustomTableViewCell";
+
+choose.source="Choose Photo";
+take.photo="Take Photo";
+photo.library="Photo Library";
+
+call="Call";
+browse="View in Browser";
+localized.address="Address";
