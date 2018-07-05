@@ -7,23 +7,41 @@
 //
 
 import UIKit
+import MapKit
+import CoreData
 
-class Contato: CustomStringConvertible {
+class Contato: NSManagedObject, MKAnnotation {
 
-    var nome: String!
-    var endereco: String!
-    var telefone: String!
-    var site: String!
-    var foto: UIImage!
+    @NSManaged var nome: String!
+    @NSManaged var endereco: String!
+    @NSManaged var telefone: String!
+    @NSManaged var site: String!
+    @NSManaged var foto: UIImage!
+    @NSManaged var latitude: NSNumber!
+    @NSManaged var longitude: NSNumber!
     
-    var description: String {
+    
+    
+    override var description: String {
         return " Name = " + nome! + " / Endereco = " + endereco! + " / Telefone: " + telefone! + " / Site = " + site
     }
     
-}
-
-extension Contato : Equatable {
+    var title: String? { return nome }
+    
+    var subtitle: String? { return telefone }
+    
     static func ==(lhs: Contato, rhs: Contato) -> Bool {
         return lhs.nome == rhs.nome
     }
+    
+    var coordinate: CLLocationCoordinate2D{
+        
+        if(latitude == nil || longitude == nil){
+            return kCLLocationCoordinate2DInvalid
+        }
+        
+        return CLLocationCoordinate2D(latitude: latitude.doubleValue, longitude: longitude.doubleValue)
+    }
+    
 }
+

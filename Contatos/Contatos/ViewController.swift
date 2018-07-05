@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreLocation
 
 class ViewController: UIViewController {
 
@@ -16,6 +17,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var txtSite: UITextField!
     @IBOutlet weak var imgFotoContato: UIImageView!
     @IBOutlet weak var imgLoader: UIActivityIndicatorView!
+    @IBOutlet weak var imgLoaderCoordenadas: UIActivityIndicatorView!
+    @IBOutlet weak var txtLongitude: UITextField!
+    @IBOutlet weak var txtLatitude: UITextField!
     
     let dao = ContatoDAO.shared
     var contato : Contato?
@@ -30,7 +34,8 @@ class ViewController: UIViewController {
             preencheForm(with: contato)
             isNew = false
         }else{
-            contato = Contato()
+            contato = dao.novoContato()
+            
         }
     }
     
@@ -47,12 +52,48 @@ class ViewController: UIViewController {
             dao.add(novoContato: contato!)
             delegate?.criado(contato: contato!)
         }else{
+            dao.update(contato: contato!)
             delegate?.atualizado(contato: contato!)
         }
         
         _ = navigationController?.popViewController(animated: true)
     }
 
+    @IBAction func getCoordenadas(_ sender: UIButton) {
+        let enconder = CLGeocoder()
+        
+        defer{
+            sender.isHidden = false
+            self.imgLoaderCoordenadas.stopAnimating()
+        }
+        
+        
+        imgLoaderCoordenadas.startAnimating()
+        sender.isHidden = true
+        
+        guard let endereco = txtEndereco.text
+            else { return }
+        
+        enconder.geocodeAddressString(endereco) {
+            (resultado, erro) in
+            
+            guard erro == nil else { return }
+            
+            guard let localidades = resultado else { return }
+            
+            if (localidades.count <= 0 ) { return }
+                       
+            guard let localizacao = localidades[0].location else { return }
+            
+            let coordenadas = localizacao.coordinate
+            
+            self.txtLatitude.text = coordenadas.latitude.description
+            self.txtLongitude.text = coordenadas.longitude.description
+        }
+        
+        
+    }
+    
     private func preencheForm(with contato: Contato){
         txtNome.text = contato.nome
         txtTelefone.text = contato.telefone
@@ -64,6 +105,12 @@ class ViewController: UIViewController {
             foto.layer.cornerRadius = foto.layer.cornerRadius / 2
             foto.clipsToBounds = true
         }
+        if let latitude = contato.latitude {
+            txtLatitude.text = latitude.description
+        }
+        if let longitude = contato.longitude{
+            txtLongitude.text = longitude.description
+        }
     }
     
     private func preencheContato(){
@@ -73,7 +120,13 @@ class ViewController: UIViewController {
         contato?.site = txtSite.text!
         if let foto = imgFotoContato.image{
             contato?.foto = foto
-        }        
+        }
+        if let latitude =  Double(txtLatitude.text!)   {
+            contato?.latitude = NSNumber(value: latitude)
+        }
+        if let longitude = Double(txtLongitude.text!){
+            contato?.longitude = NSNumber(value: longitude)
+        }
     }
     
     @IBAction func selecionarFoto(_ sender: UITapGestureRecognizer) {

@@ -8,9 +8,11 @@
 
 import UIKit
 
+
 class ContatoDAO: NSObject {
 
     private var contatos: [Contato]
+    private let coreData = CoreDataUtil.shared
     
     static let shared = ContatoDAO()
     
@@ -25,13 +27,21 @@ class ContatoDAO: NSObject {
     }
     */
     
+    func novoContato() -> Contato{
+        return coreData.newManaged(name: "Contato") as! Contato
+    }
+    
     private override init(){
-        contatos = Array()
+        contatos = coreData.findAll()
     }
     
     func add(novoContato: Contato){
         contatos.append(novoContato)
-        print(contatos)
+        coreData.commit()
+    }
+    
+    func update(contato: Contato){
+        coreData.commit()
     }
     
     func size() ->Int {
@@ -43,7 +53,10 @@ class ContatoDAO: NSObject {
     }
     
     func remove(byId:Int){
+        let contato = findBy(posicao: byId)
+        coreData.remove(managedObject: contato)
         contatos.remove(at: byId)
+        coreData.commit()
     }
     
     func getPosicao(by contato: Contato) -> Int? {
@@ -51,5 +64,9 @@ class ContatoDAO: NSObject {
         return contatos.index(where: { other in
             other.nome == contato.nome
         })
+    }
+    
+    func findAll() -> [Contato]{
+        return contatos
     }
 }

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D483DFABDE8C7382306C72F /* Pods_ContatosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B40B9C9242AAF8946129D01 /* Pods_ContatosTests.framework */; };
+		78D24268847DA437AC53E7EA /* Pods_ContatosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 882F4050FF42EE15805F500A /* Pods_ContatosUITests.framework */; };
+		850119FD20EE436A000E93B9 /* Vila Mariana.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 850119FC20EE436A000E93B9 /* Vila Mariana.gpx */; };
 		850EE4EC20EBF1D500C23F60 /* ManipulaContatoDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850EE4EB20EBF1D500C23F60 /* ManipulaContatoDelegate.swift */; };
 		850EE4F120EC0C8300C23F60 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 850EE4F320EC0C8300C23F60 /* Localizable.strings */; };
 		850EE4F620EC127200C23F60 /* Strings+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850EE4F520EC127200C23F60 /* Strings+Localized.swift */; };
@@ -15,6 +18,7 @@
 		8518CEC720ECF06900F4141E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8518CEC920ECF06900F4141E /* InfoPlist.strings */; };
 		8518CECC20ECFB5A00F4141E /* ActionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8518CECB20ECFB5A00F4141E /* ActionManager.swift */; };
 		8518CECE20ED49EB00F4141E /* CelulaCustomizada.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8518CECD20ED49EB00F4141E /* CelulaCustomizada.swift */; };
+		851FAB4720EEA3D800F27859 /* CoreDataUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851FAB4620EEA3D800F27859 /* CoreDataUtil.swift */; };
 		854671C420EA5ECE003125F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854671C320EA5ECE003125F9 /* AppDelegate.swift */; };
 		854671C620EA5ECE003125F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854671C520EA5ECE003125F9 /* ViewController.swift */; };
 		854671C920EA5ECE003125F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 854671C720EA5ECE003125F9 /* Main.storyboard */; };
@@ -25,6 +29,7 @@
 		854671E720EA5ECE003125F9 /* ContatosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854671E620EA5ECE003125F9 /* ContatosUITests.swift */; };
 		854671F520EA9802003125F9 /* Contato.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854671F420EA9802003125F9 /* Contato.swift */; };
 		85D17B6020ED6158002DDDDF /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D17B5F20ED6158002DDDDF /* MapsViewController.swift */; };
+		A823D02D37D5B92C8B97FBF1 /* Pods_Contatos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F72F9B6EF11AB11E0D6FF603 /* Pods_Contatos.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +50,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1046A05E1722C84B411A9BD7 /* Pods-ContatosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContatosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ContatosTests/Pods-ContatosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5B40B9C9242AAF8946129D01 /* Pods_ContatosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ContatosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		70DF7B856E93952EE735F44C /* Pods-Contatos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Contatos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Contatos/Pods-Contatos.debug.xcconfig"; sourceTree = "<group>"; };
+		850119FC20EE436A000E93B9 /* Vila Mariana.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Vila Mariana.gpx"; path = "../../../../Desktop/Caelum/67/Vila Mariana.gpx"; sourceTree = "<group>"; };
 		850EE4EB20EBF1D500C23F60 /* ManipulaContatoDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManipulaContatoDelegate.swift; sourceTree = "<group>"; };
 		850EE4ED20EC0C1800C23F60 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main.strings"; sourceTree = "<group>"; };
 		850EE4EE20EC0C1800C23F60 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
@@ -57,6 +66,7 @@
 		8518CECA20ECF06A00F4141E /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		8518CECB20ECFB5A00F4141E /* ActionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionManager.swift; sourceTree = "<group>"; };
 		8518CECD20ED49EB00F4141E /* CelulaCustomizada.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CelulaCustomizada.swift; sourceTree = "<group>"; };
+		851FAB4620EEA3D800F27859 /* CoreDataUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataUtil.swift; sourceTree = "<group>"; };
 		854671C020EA5ECD003125F9 /* Contatos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Contatos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		854671C320EA5ECE003125F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		854671C520EA5ECE003125F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +83,12 @@
 		854671E820EA5ECE003125F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		854671F420EA9802003125F9 /* Contato.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contato.swift; sourceTree = "<group>"; };
 		85D17B5F20ED6158002DDDDF /* MapsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
+		882F4050FF42EE15805F500A /* Pods_ContatosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ContatosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		94CF521E54E1B662BA262BF9 /* Pods-Contatos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Contatos.release.xcconfig"; path = "Pods/Target Support Files/Pods-Contatos/Pods-Contatos.release.xcconfig"; sourceTree = "<group>"; };
+		A1290F42667B421064450259 /* Pods-ContatosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContatosUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ContatosUITests/Pods-ContatosUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A655F9EA05981F13CB19BDB0 /* Pods-ContatosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContatosUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ContatosUITests/Pods-ContatosUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CD491F732FAEF5084B09087A /* Pods-ContatosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContatosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ContatosTests/Pods-ContatosTests.release.xcconfig"; sourceTree = "<group>"; };
+		F72F9B6EF11AB11E0D6FF603 /* Pods_Contatos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Contatos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A823D02D37D5B92C8B97FBF1 /* Pods_Contatos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D483DFABDE8C7382306C72F /* Pods_ContatosTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,12 +112,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78D24268847DA437AC53E7EA /* Pods_ContatosUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5BA2B557C2AC0088C274285F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				70DF7B856E93952EE735F44C /* Pods-Contatos.debug.xcconfig */,
+				94CF521E54E1B662BA262BF9 /* Pods-Contatos.release.xcconfig */,
+				1046A05E1722C84B411A9BD7 /* Pods-ContatosTests.debug.xcconfig */,
+				CD491F732FAEF5084B09087A /* Pods-ContatosTests.release.xcconfig */,
+				A655F9EA05981F13CB19BDB0 /* Pods-ContatosUITests.debug.xcconfig */,
+				A1290F42667B421064450259 /* Pods-ContatosUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		854671B720EA5ECC003125F9 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +139,8 @@
 				854671DA20EA5ECE003125F9 /* ContatosTests */,
 				854671E520EA5ECE003125F9 /* ContatosUITests */,
 				854671C120EA5ECD003125F9 /* Products */,
+				5BA2B557C2AC0088C274285F /* Pods */,
+				F282DB5EED02EC6CB0D1DA1F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +157,7 @@
 		854671C220EA5ECD003125F9 /* Contatos */ = {
 			isa = PBXGroup;
 			children = (
+				850119FC20EE436A000E93B9 /* Vila Mariana.gpx */,
 				854671C320EA5ECE003125F9 /* AppDelegate.swift */,
 				854671C520EA5ECE003125F9 /* ViewController.swift */,
 				854671C720EA5ECE003125F9 /* Main.storyboard */,
@@ -140,6 +175,7 @@
 				8518CECB20ECFB5A00F4141E /* ActionManager.swift */,
 				8518CECD20ED49EB00F4141E /* CelulaCustomizada.swift */,
 				85D17B5F20ED6158002DDDDF /* MapsViewController.swift */,
+				851FAB4620EEA3D800F27859 /* CoreDataUtil.swift */,
 			);
 			path = Contatos;
 			sourceTree = "<group>";
@@ -162,6 +198,16 @@
 			path = ContatosUITests;
 			sourceTree = "<group>";
 		};
+		F282DB5EED02EC6CB0D1DA1F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F72F9B6EF11AB11E0D6FF603 /* Pods_Contatos.framework */,
+				5B40B9C9242AAF8946129D01 /* Pods_ContatosTests.framework */,
+				882F4050FF42EE15805F500A /* Pods_ContatosUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -169,9 +215,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 854671EB20EA5ECE003125F9 /* Build configuration list for PBXNativeTarget "Contatos" */;
 			buildPhases = (
+				46E39F5FEF2DC14ABC0951C9 /* [CP] Check Pods Manifest.lock */,
 				854671BC20EA5ECD003125F9 /* Sources */,
 				854671BD20EA5ECD003125F9 /* Frameworks */,
 				854671BE20EA5ECD003125F9 /* Resources */,
+				0C921E5CFA010B1CA53AE52A /* [CP] Embed Pods Frameworks */,
+				B7F10926AFB90B32A022E32D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -186,9 +235,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 854671EE20EA5ECE003125F9 /* Build configuration list for PBXNativeTarget "ContatosTests" */;
 			buildPhases = (
+				42A673E5AEE81C170F190D58 /* [CP] Check Pods Manifest.lock */,
 				854671D320EA5ECE003125F9 /* Sources */,
 				854671D420EA5ECE003125F9 /* Frameworks */,
 				854671D520EA5ECE003125F9 /* Resources */,
+				7850AAFDB4224525A93FB620 /* [CP] Embed Pods Frameworks */,
+				5261417E6249A919B04C68CA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -204,9 +256,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 854671F120EA5ECE003125F9 /* Build configuration list for PBXNativeTarget "ContatosUITests" */;
 			buildPhases = (
+				F13B509A1796FE3DB244B52E /* [CP] Check Pods Manifest.lock */,
 				854671DE20EA5ECE003125F9 /* Sources */,
 				854671DF20EA5ECE003125F9 /* Frameworks */,
 				854671E020EA5ECE003125F9 /* Resources */,
+				D9ED61B09D2EC927639E311A /* [CP] Embed Pods Frameworks */,
+				B7A9F6365F18685CDEEA4A2E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -272,6 +327,7 @@
 			files = (
 				854671D120EA5ECE003125F9 /* LaunchScreen.storyboard in Resources */,
 				850EE4F120EC0C8300C23F60 /* Localizable.strings in Resources */,
+				850119FD20EE436A000E93B9 /* Vila Mariana.gpx in Resources */,
 				854671CE20EA5ECE003125F9 /* Assets.xcassets in Resources */,
 				854671C920EA5ECE003125F9 /* Main.storyboard in Resources */,
 				8518CEC720ECF06900F4141E /* InfoPlist.strings in Resources */,
@@ -294,6 +350,144 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0C921E5CFA010B1CA53AE52A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Contatos/Pods-Contatos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		42A673E5AEE81C170F190D58 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		46E39F5FEF2DC14ABC0951C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5261417E6249A919B04C68CA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ContatosTests/Pods-ContatosTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7850AAFDB4224525A93FB620 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ContatosTests/Pods-ContatosTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7A9F6365F18685CDEEA4A2E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ContatosUITests/Pods-ContatosUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7F10926AFB90B32A022E32D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Contatos/Pods-Contatos-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9ED61B09D2EC927639E311A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ContatosUITests/Pods-ContatosUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F13B509A1796FE3DB244B52E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		854671BC20EA5ECD003125F9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -309,6 +503,7 @@
 				854671CC20EA5ECE003125F9 /* Contatos.xcdatamodeld in Sources */,
 				8518CECE20ED49EB00F4141E /* CelulaCustomizada.swift in Sources */,
 				8518CECC20ECFB5A00F4141E /* ActionManager.swift in Sources */,
+				851FAB4720EEA3D800F27859 /* CoreDataUtil.swift in Sources */,
 				85D17B6020ED6158002DDDDF /* MapsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -481,6 +676,7 @@
 		};
 		854671EC20EA5ECE003125F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70DF7B856E93952EE735F44C /* Pods-Contatos.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Contatos/Info.plist;
@@ -493,6 +689,7 @@
 		};
 		854671ED20EA5ECE003125F9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94CF521E54E1B662BA262BF9 /* Pods-Contatos.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Contatos/Info.plist;
@@ -505,6 +702,7 @@
 		};
 		854671EF20EA5ECE003125F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1046A05E1722C84B411A9BD7 /* Pods-ContatosTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -519,6 +717,7 @@
 		};
 		854671F020EA5ECE003125F9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD491F732FAEF5084B09087A /* Pods-ContatosTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -533,6 +732,7 @@
 		};
 		854671F220EA5ECE003125F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A655F9EA05981F13CB19BDB0 /* Pods-ContatosUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = ContatosUITests/Info.plist;
@@ -546,6 +746,7 @@
 		};
 		854671F320EA5ECE003125F9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1290F42667B421064450259 /* Pods-ContatosUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = ContatosUITests/Info.plist;

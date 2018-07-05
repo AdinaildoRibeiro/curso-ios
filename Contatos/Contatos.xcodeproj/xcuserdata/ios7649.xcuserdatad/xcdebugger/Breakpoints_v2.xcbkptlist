@@ -106,13 +106,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Contatos/ViewController.swift"
-            timestampString = "552427052.870852"
+            timestampString = "552514657.060907"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "150"
-            endingLineNumber = "150"
-            landmarkName = "imagePickerControllerDidCancel(_:)"
-            landmarkType = "7">
+            startingLineNumber = "180"
+            endingLineNumber = "180"
+            landmarkName = "ViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -122,13 +122,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Contatos/ViewController.swift"
-            timestampString = "552427052.870852"
+            timestampString = "552514657.060907"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "151"
-            endingLineNumber = "151"
-            landmarkName = "imagePickerControllerDidCancel(_:)"
-            landmarkType = "7">
+            startingLineNumber = "181"
+            endingLineNumber = "181"
+            landmarkName = "ViewController"
+            landmarkType = "4">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -150,63 +150,63 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Contatos/ViewController.swift"
-            timestampString = "552428937.203884"
+            timestampString = "552514657.060907"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "75"
-            endingLineNumber = "75"
-            landmarkName = "preencheContato()"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
+            landmarkName = "getCoordenadas(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Contatos/ViewController.swift"
-            timestampString = "552427074.4236569"
+            timestampString = "552514657.060907"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
-            landmarkName = "preencheForm(with:)"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "getCoordenadas(_:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Contatos.ViewController.(preencheForm in _76E8C1B8C632A21EF3CB35CAC0A9AAFC) (with : Contatos.Contato) -&gt; ()"
+                  symbolName = "Contatos.ViewController.getCoordenadas (__ObjC.UIButton) -&gt; ()"
                   moduleName = "Contatos"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/ios7649/Documents/curso-ios/Contatos/Contatos/ViewController.swift"
-                  timestampString = "552430057.255055"
+                  timestampString = "552492932.667432"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "63"
                   endingLineNumber = "63"
-                  offsetFromSymbolStart = "1754">
+                  offsetFromSymbolStart = "571">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Contatos.ViewController.(preencheForm in _76E8C1B8C632A21EF3CB35CAC0A9AAFC) (with : Contatos.Contato) -&gt; ()"
+                  symbolName = "Contatos.ViewController.(getCoordenadas (__ObjC.UIButton) -&gt; ()).(closure #1)"
                   moduleName = "Contatos"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/ios7649/Documents/curso-ios/Contatos/Contatos/ViewController.swift"
-                  timestampString = "552430057.258653"
+                  timestampString = "552492932.671159"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "63"
-                  endingLineNumber = "63"
-                  offsetFromSymbolStart = "1805">
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "19">
                </Location>
             </Locations>
          </BreakpointContent>

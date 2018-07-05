@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "MapsViewController.mapView(MKMapView, viewFor : MKAnnotation) -&gt; MKAnnotationView?:MapsViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "imageView.image.description">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ContatoDAO.findAll() -&gt; [Contato]:ContatoDAO.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "contatos">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

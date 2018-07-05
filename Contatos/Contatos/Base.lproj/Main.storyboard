@@ -108,7 +108,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="HaU-Ks-oBH" userLabel="Stack View Form">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="HaU-Ks-oBH" userLabel="Stack View Form">
                                 <subviews>
                                     <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="wAq-Nn-qRA"/>
                                     <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yYO-gh-yM0">
@@ -141,6 +141,37 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="URL"/>
                                     </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="oDM-o4-wgh" userLabel="Stack View Geo">
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="kiW-DL-iVc" userLabel="Stack View LatLong">
+                                                <subviews>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Latitude" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WTs-2u-c65">
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="100" id="XON-lB-k7Z"/>
+                                                        </constraints>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Longitude" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Jc-9g-Dq2">
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="100" id="cFg-HR-Onf"/>
+                                                        </constraints>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kWb-T9-Azi">
+                                                <state key="normal" title="Button" image="gps"/>
+                                                <connections>
+                                                    <action selector="getCoordenadas:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l9z-Ka-Q5b"/>
+                                                </connections>
+                                            </button>
+                                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="By4-xu-uzG" userLabel="ACI Load Coordenadas"/>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -161,7 +192,10 @@
                     <connections>
                         <outlet property="imgFotoContato" destination="yYO-gh-yM0" id="ym1-Lk-pIv"/>
                         <outlet property="imgLoader" destination="wAq-Nn-qRA" id="RUc-0T-QSA"/>
+                        <outlet property="imgLoaderCoordenadas" destination="By4-xu-uzG" id="xgO-D7-8RQ"/>
                         <outlet property="txtEndereco" destination="bQf-hM-kjH" id="ixU-hD-ajY"/>
+                        <outlet property="txtLatitude" destination="WTs-2u-c65" id="oeQ-R8-rFS"/>
+                        <outlet property="txtLongitude" destination="2Jc-9g-Dq2" id="aHi-Dr-ld7"/>
                         <outlet property="txtNome" destination="zK4-y5-btX" id="MzT-ku-vBg"/>
                         <outlet property="txtSite" destination="WjT-pG-xNt" id="nOd-lo-I8c"/>
                         <outlet property="txtTelefone" destination="5Rz-M6-ZFk" id="lx4-0L-ep7"/>
@@ -174,7 +208,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2173" y="80"/>
+            <point key="canvasLocation" x="2171.25" y="79.225352112676063"/>
         </scene>
         <!--Maps-->
         <scene sceneID="ZW1-xF-u7A">
@@ -265,6 +299,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="gps" width="30" height="30"/>
         <image name="lista-contatos" width="30" height="30"/>
         <image name="mapa-contatos" width="30" height="30"/>
     </resources>
