@@ -1,12 +1,25 @@
 PODS:
+  - Alamofire (4.7.2)
+  - AlamofireImage (3.3.1):
+    - Alamofire (~> 4.5)
+  - AlamofireObjectMapper (4.1.0):
+    - Alamofire (~> 4.1)
+    - ObjectMapper (~> 2.0)
   - IQKeyboardManagerSwift (5.0.0)
+  - ObjectMapper (2.2.9)
 
 DEPENDENCIES:
+  - AlamofireImage (~> 3.3)
+  - AlamofireObjectMapper (~> 4.1.0)
   - IQKeyboardManagerSwift (= 5.0.0)
 
 SPEC CHECKSUMS:
+  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  AlamofireImage: 3b35b586853abaf94ca1250f4e94cff3c21a4c0d
+  AlamofireObjectMapper: 435adc82f5b367679bd9e71c4974a54efd0b2521
   IQKeyboardManagerSwift: 3f340202ebe1a7076279b9b9b3c817243ddb3aab
+  ObjectMapper: 63cfe41bc6f8e7c8f44344c49901b8ae7de14c52
 
-PODFILE CHECKSUM: 93d9f994085737f4d410660264c74fafdd5218cb
+PODFILE CHECKSUM: 38d8ff7588ee4dcc666abea05a39ce91466bc8fa
 
 COCOAPODS: 1.2.1

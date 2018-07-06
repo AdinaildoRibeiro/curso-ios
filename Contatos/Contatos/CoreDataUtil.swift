@@ -10,20 +10,18 @@ import Foundation
 import CoreData
 
 
-class CoreDataUtil {
+class CoreDataUtil<T> where T : NSManagedObject {
     
-    static let shared = CoreDataUtil()
-    
-    private init(){
+    init(){
         
     }
     
-    func newManaged(name: String) -> NSManagedObject {
-        return NSEntityDescription.insertNewObject(forEntityName: name, into: persistentContainer.viewContext)
+    func newManaged() -> T {
+        return NSEntityDescription.insertNewObject(forEntityName: String(describing: T.self), into: persistentContainer.viewContext) as! T
     }
     
-    func findAll() -> [Contato]{
-        let request = NSFetchRequest<Contato>(entityName: "Contato")
+    func findAll() -> [T]{
+        let request = NSFetchRequest<T>(entityName: String(describing: T.self) )
         
         do {
             return try persistentContainer.viewContext.fetch(request)
@@ -33,7 +31,7 @@ class CoreDataUtil {
         }
     }
     
-    func remove(managedObject: Contato) {
+    func remove(managedObject: NSManagedObject) {
         persistentContainer.viewContext.delete(managedObject)
     }
     

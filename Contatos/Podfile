@@ -7,6 +7,8 @@ target 'Contatos' do
 
   # Pods for Contatos
   pod 'IQKeyboardManagerSwift', '5.0.0'
+  pod 'AlamofireImage', '~> 3.3'
+  pod 'AlamofireObjectMapper', '~> 4.1.0'
 
   target 'ContatosTests' do
     inherit! :search_paths

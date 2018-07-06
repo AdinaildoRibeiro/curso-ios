@@ -134,16 +134,21 @@ extension ListaContatosTableViewController: UITableViewDelegate  {
 extension ListaContatosTableViewController  {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        let form = segue.destination as? ViewController
-        form?.delegate = self
-        
+        let contato = sender as? Contato
+                
         if segue.identifier == "ToFormContatoForUpdate" {
-            let contato = sender as? Contato
+            let form = segue.destination as? ViewController
+            form?.delegate = self
             form?.contato = contato
         }
         
         if segue.identifier == "ToFormContatoForInsert" {
             print("Inserindo...")
+        }
+        
+        if segue.identifier == "weatherSegue" {
+            let form = segue.destination as? ClimaViewController
+            form?.contato = contato
         }
         
     }

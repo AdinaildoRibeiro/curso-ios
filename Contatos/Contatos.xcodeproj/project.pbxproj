@@ -18,6 +18,10 @@
 		8518CEC720ECF06900F4141E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8518CEC920ECF06900F4141E /* InfoPlist.strings */; };
 		8518CECC20ECFB5A00F4141E /* ActionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8518CECB20ECFB5A00F4141E /* ActionManager.swift */; };
 		8518CECE20ED49EB00F4141E /* CelulaCustomizada.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8518CECD20ED49EB00F4141E /* CelulaCustomizada.swift */; };
+		851B277920EF989700E637C6 /* ClimaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851B277820EF989700E637C6 /* ClimaViewController.swift */; };
+		851B277B20EFA6CD00E637C6 /* Clima.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851B277A20EFA6CD00E637C6 /* Clima.swift */; };
+		851B277D20EFBFC300E637C6 /* CLLocationCoordinate2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851B277C20EFBFC300E637C6 /* CLLocationCoordinate2D.swift */; };
+		851B277F20EFC94200E637C6 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851B277E20EFC94200E637C6 /* Api.swift */; };
 		851FAB4720EEA3D800F27859 /* CoreDataUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851FAB4620EEA3D800F27859 /* CoreDataUtil.swift */; };
 		854671C420EA5ECE003125F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854671C320EA5ECE003125F9 /* AppDelegate.swift */; };
 		854671C620EA5ECE003125F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854671C520EA5ECE003125F9 /* ViewController.swift */; };
@@ -66,6 +70,10 @@
 		8518CECA20ECF06A00F4141E /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		8518CECB20ECFB5A00F4141E /* ActionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionManager.swift; sourceTree = "<group>"; };
 		8518CECD20ED49EB00F4141E /* CelulaCustomizada.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CelulaCustomizada.swift; sourceTree = "<group>"; };
+		851B277820EF989700E637C6 /* ClimaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClimaViewController.swift; sourceTree = "<group>"; };
+		851B277A20EFA6CD00E637C6 /* Clima.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Clima.swift; sourceTree = "<group>"; };
+		851B277C20EFBFC300E637C6 /* CLLocationCoordinate2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLocationCoordinate2D.swift; sourceTree = "<group>"; };
+		851B277E20EFC94200E637C6 /* Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		851FAB4620EEA3D800F27859 /* CoreDataUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataUtil.swift; sourceTree = "<group>"; };
 		854671C020EA5ECD003125F9 /* Contatos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Contatos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		854671C320EA5ECE003125F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -176,6 +184,10 @@
 				8518CECD20ED49EB00F4141E /* CelulaCustomizada.swift */,
 				85D17B5F20ED6158002DDDDF /* MapsViewController.swift */,
 				851FAB4620EEA3D800F27859 /* CoreDataUtil.swift */,
+				851B277820EF989700E637C6 /* ClimaViewController.swift */,
+				851B277A20EFA6CD00E637C6 /* Clima.swift */,
+				851B277C20EFBFC300E637C6 /* CLLocationCoordinate2D.swift */,
+				851B277E20EFC94200E637C6 /* Api.swift */,
 			);
 			path = Contatos;
 			sourceTree = "<group>";
@@ -495,15 +507,19 @@
 			files = (
 				854671F520EA9802003125F9 /* Contato.swift in Sources */,
 				854671C620EA5ECE003125F9 /* ViewController.swift in Sources */,
+				851B277920EF989700E637C6 /* ClimaViewController.swift in Sources */,
 				85161F4C20EAA78E00377108 /* ListaContatosTableViewController.swift in Sources */,
 				85161F4A20EAA00700377108 /* ContatoDAO.swift in Sources */,
 				850EE4EC20EBF1D500C23F60 /* ManipulaContatoDelegate.swift in Sources */,
 				854671C420EA5ECE003125F9 /* AppDelegate.swift in Sources */,
 				850EE4F620EC127200C23F60 /* Strings+Localized.swift in Sources */,
+				851B277D20EFBFC300E637C6 /* CLLocationCoordinate2D.swift in Sources */,
 				854671CC20EA5ECE003125F9 /* Contatos.xcdatamodeld in Sources */,
 				8518CECE20ED49EB00F4141E /* CelulaCustomizada.swift in Sources */,
 				8518CECC20ECFB5A00F4141E /* ActionManager.swift in Sources */,
 				851FAB4720EEA3D800F27859 /* CoreDataUtil.swift in Sources */,
+				851B277B20EFA6CD00E637C6 /* Clima.swift in Sources */,
+				851B277F20EFC94200E637C6 /* Api.swift in Sources */,
 				85D17B6020ED6158002DDDDF /* MapsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

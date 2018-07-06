@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import CoreLocation
 
 class ActionManager {
     
@@ -31,10 +31,17 @@ class ActionManager {
         // outra sintaxe para o clousure 
         let localizar = UIAlertAction(title: "localized.address".localized, style: UIAlertActionStyle.default, handler: { (action) in return self.localizar(endereco: contato.endereco) })
         
+        let mapa = UIAlertAction(title: "show.weather".localized, style: UIAlertActionStyle.default, handler: { (action) in return self.navegarTelaMapa(with: contato) })
+        
         alerta.addAction(cancelar)
         alerta.addAction(ligar)
         alerta.addAction(navegar)
         alerta.addAction(localizar)
+        
+        if CLLocationCoordinate2DIsValid(contato.coordinate){
+            alerta.addAction(mapa)
+        }
+        
         
         controller.present(alerta, animated: true, completion: nil)
     }
@@ -84,6 +91,21 @@ class ActionManager {
         }
         
         openApp(by: url)
+    }
+    
+    private func navegarTelaMapa(with contato: Contato){
+        
+        //
+        
+        controller.performSegue(withIdentifier: "weatherSegue", sender: contato)
+        
+        
+        // excutando navegacao via Codigo por identificador da view
+        
+        //guard let climaView = controller.storyboard?.instantiateViewController(withIdentifier: "weather_id") as? ClimaViewController else { return }
+        //climaView.contato = contato
+        //controller.navigationController?.pushViewController(climaView, animated: true)
+        
     }
     
 }

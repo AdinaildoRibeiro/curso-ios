@@ -12,9 +12,14 @@ import UIKit
 class ContatoDAO: NSObject {
 
     private var contatos: [Contato]
-    private let coreData = CoreDataUtil.shared
-    
+    private let coreData: CoreDataUtil<Contato>
     static let shared = ContatoDAO()
+    
+    override init(){
+        coreData = CoreDataUtil<Contato>()
+        contatos = coreData.findAll()
+    }
+    
     
     /* outra forma de implementar o Design Pattern Singleton
     private static var instance: ContatoDAO
@@ -28,11 +33,7 @@ class ContatoDAO: NSObject {
     */
     
     func novoContato() -> Contato{
-        return coreData.newManaged(name: "Contato") as! Contato
-    }
-    
-    private override init(){
-        contatos = coreData.findAll()
+        return coreData.newManaged()
     }
     
     func add(novoContato: Contato){
